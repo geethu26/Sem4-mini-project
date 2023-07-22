@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/static/Home.css" />
+    <script
+      src="https://kit.fontawesome.com/bbfc9df0ce.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="fnav">
+      <div class="left">
+        <img src="MUS-E-PAY logo.png" alt="" />
+        <!--logo of webiste -->
+      </div>
+      <div class="center">
+        <input type="text" placeholder="Search for Museum, Exhibition" />
+      </div>
+    </nav>
+    <nav class="snav">
+      <div class="sleft">
+        <i class="fa-solid fa-bars"> </i>
+        <p>Museums</p>
+        <p>Exhibtion</p>
+      </div>
+      <div class="sright">
+        <p>Review</p>
+        <p>About</p>
+      </div>
+    </nav>
+
+    <div class="main">
+      <img
+        src="https://thumbs.dreamstime.com/b/word-museum-2990276.jpg"
+        alt=""
+      />
+    </div>
+
+    <div class="container">
+      <h2>Recommended Museums</h2>
+      <!-- <h4>See All</h4> -->
+      <div class="card">
+        <img
+          src="https://media.timeout.com/images/105362265/1024/768/image.jpg"
+          alt=""
+        />
+        <img
+          src="https://media.timeout.com/images/105362266/1024/768/image.jpg"
+          alt=""
+        />
+        <img
+          src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/27/78/62.jpg"
+          alt=""
+        />
+        <img src="" alt="" />
+      </div>
+    </div>
+
+    <div class="name">
+      <a href="{{url_for('csmvs')}}"
+        ><h3>CHHATRAPATI SHIVAJI MAHARAJ<br />VASTU SANGRAHALAYA</h3></a
+      >
+      <a href="{{url_for('cstm')}}"><h3>DR.BHAU DAJI LAD MUSEUM</h3></a>
+      <a href="{{url_for('dbdlm')}}"><h3>CST HERITAGE MUSEUM</h3></a>
+    </div>
+
+    <div class="footer">
+      <div class="col1">
+        <h3>USEFUL LINKS</h3>
+        <a href="#">ABOUT</a>
+        <a href="#">SERVICES</a>
+        <a href="#">CONTACT</a>
+        <a href="#">FAQs</a>
+      </div>
+      <div class="col2">
+        <h3>NEWLETTER</h3>
+        <form>
+          <input type="text" placeholder="Your Email Address" required />
+          <br />
+          <button type="submit">SUBSCRIBE NOW</button>
+        </form>
+      </div>
+      <div class="col3">
+        <h3>CONTACT</h3>
+        <p>568,MG Road,Byculla<br />Mumbai,Maharashtra</p>
+        <div class="socialmedia">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <a class="scroll-up" href="#"></a><i class="fa-solid fa-up"></i>
+      </div>
+    </div>
+  </body>
+</html>

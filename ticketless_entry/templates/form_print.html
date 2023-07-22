@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ticket</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #fff;
+        color: #000;
+      }
+
+      .ticket {
+        width: 500px;
+        height: 200px;
+        background-color: #f8f8f8;
+        border: 2px dashed #000;
+        border-radius: 10px;
+        margin: 50px auto;
+        padding: 10px;
+        text-align: left;
+      }
+
+      h1 {
+        font-size: 24px;
+        margin: 0;
+        padding: 0;
+      }
+
+      p {
+        font-size: 18px;
+        margin: 5px 0;
+        padding: 0;
+      }
+
+      .ticket.qr {
+        align-items: right;
+      }
+      .header {
+        padding: 60px;
+        text-align: center;
+        background: rgb(42, 42, 68);
+        color: white;
+        font-size: 30px;
+      }
+      footer {
+        text-align: center;
+        padding: 50px;
+        background-color: rgb(42, 42, 68);
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Mus-E-tick</h1>
+    </div>
+    <div class="ticket">
+      <div class="qr">
+        <img align="right" src="data:image/png;base64,{{img}}" alt="QR code" />
+      </div>
+      <h1>MUSEUM TICKET</h1>
+      <p>Museum: CSMVS ,Mumbai</p>
+      <p>Date: {{visitd}}</p>
+      <p>Time-slot: {{timeslot}}</p>
+      <p>Name: {{name}} <br /></p>
+      <p>Ticket Number: {{id}}</p>
+      <p>No of people: {{notickets}}</p>
+    </div>
+    <br />
+
+    <footer>
+      <p>Thank you for booking your ticket with us!</p>
+      <p>Hope you enjoy your visit.</p>
+      <p>
+        You can download the above ticket so that it can be scanned at the
+        visit.
+      </p>
+    </footer>
+  </body>
+</html>

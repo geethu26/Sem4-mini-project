@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/static/Payment.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html form</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="title">Book Ticket</div>
+      <div class="content">
+        <form action="#">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">First Name</span>
+              <input type="text" placeholder="Enter First your name" required />
+              <span class="details"><br />Phone number</span>
+              <input type="text" placeholder="Enter your Phone no." required />
+              <span class="details"><br />Age</span>
+              <input type="text" placeholder="Enter your Age" required />
+            </div>
+            <br />
+
+            <div class="input-box">
+              <span class="details">Last name</span>
+              <input type="text" placeholder="Enter your Last name" required />
+              <span class="details"><br />Email</span>
+              <input type="text" placeholder="Enter your email" required />
+              <span class="details"><br />Gender</span>
+              <input type="text" placeholder="Male/Female/Other" required />
+            </div>
+          </div>
+
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Time-Slot</span>
+              <select name="drop-dwon" style="height: 35px">
+                <option value="morning">Morning</option>
+                <option value="afternoon">Afternoon</option>
+                <option value="evening">Evening</option>
+              </select>
+
+              <span class="details"><br />No. of Tickets</span>
+              <input
+                type="number"
+                placeholder="Enter No. of Tickets"
+                required
+              />
+              <span class="details"><br />Children</span>
+              <input type="number" placeholder="Enter number" required />
+            </div>
+            <br />
+
+            <div class="input-box">
+              <span class="details">Visitation Date</span>
+              <input type="date" required />
+
+              <span class="details"><br />Adult</span>
+              <input type="number" placeholder="Enter number" required />
+            </div>
+          </div>
+
+          <div class="button">
+            <a href="pay.html"><input type="button" value="PAY" /></a>
+          </div>
+          <div class="button">
+            <a href="Home.html"><input type="button" value="HOME" /></a>
+          </div>
+          <br />
+        </form>
+      </div>
+    </div>
+     
+  </body>
+</html>
